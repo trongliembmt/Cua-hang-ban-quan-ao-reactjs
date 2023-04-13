@@ -1,0 +1,72 @@
+
+.Banner{
+    width: 100%;
+    height: 38rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+}
+
+.Banner_title{
+    width: 60%;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+.Banner_title h1{
+    font-size: 6rem;
+    letter-spacing: .3rem;
+    font-style: italic;
+    color: #00ccff;
+    font-weight: bold;
+}
+
+.Banner_title p{
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+
+.Banner_title a{
+    color: #00ccff;
+    background-color: #ffffff;
+    padding: .6rem 2.6rem;
+    border-radius: 6rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+
+    display: inline-block;
+    position: relative;
+    animation-fill-mode: backwards;
+}
+
+.Banner_title a::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 6rem;
+    z-index: -1;
+    transition: all 1.5s; 
+}
+
+.Banner_title a:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; 
+}
+
+.Banner_title a:hover {
+    transform: translateY(0px);
+}
+
